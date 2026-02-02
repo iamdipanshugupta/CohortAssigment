@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBAr</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #nav {
+        /* border: 2px solid red; */
+        background-color: #333;
+        color: #fff;
+        padding: 10px 5px;
+      }
+      #navbar {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      button {
+        background-color: #333;
+        box-shadow: unset;
+        color: white;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid whitesmoke;
+      }
+      #nav-center-button {
+        display: flex;
+        gap: 10px;
+      }
+      .nav-child{
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <nav id="navbar">
+        <div class="nav-child">
+          <p>Webdev Cohort 2026 Html/Css</p>
+        </div>
+        <div class="nav-child">
+          <div id="nav-center-button">
+            <button>Document</button>
+            <button>Canvas</button>
+            <button>Both</button>
+          </div>
+        </div>
+        <div class="nav-child">
+          <button>CMD K</button>
+          <button>Share</button>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

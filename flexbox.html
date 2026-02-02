@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+        #parent{
+            border: 2px solid red;
+            width: 90vw;
+            height: 300px;
+        }
+        .child{
+            border: 2px solid blue;
+            height: 40px;
+            width: 40px;
+        }
+        #parent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 2px;
+        }
+        .child-1{
+          flex:1;
+          background-color: yellow;
+          order: 1;
+        }
+        .child-2{
+          flex: 1;
+          /* align-self:end ; */
+          order: 1;
+        }
+        .child-3{
+          order: 1;
+        }
+        .child-5{
+          order: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p class="child child-1">1</p>
+      <p class="child child-2">2</p>
+      <p class="child child-3">3</p>
+      <p class="child child-4">4</p>
+      <p class="child child-5">5</p>
+    </div>
+  </body>
+</html>

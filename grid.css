@@ -1,0 +1,27 @@
+#parent {
+  display: grid;
+  border: 2px solid rebeccapurple;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.child {
+  border: 1px solid rgb(219, 72, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+.child-6 {
+  /* grid-row: -2/-1; */
+  /* grid-row-start: -2;
+    grid-row-end: -2; */
+  /* grid-column-start: 3;
+    grid-column-end: 4; */
+  /* grid-column: 3/4; */
+  /* grid-area: row-start/col-start/row-end/col-end; */
+  grid-area: -2/3/-1/4;
+}
+.child-7 {
+  grid-column-start: 2;
+  grid-column-end: -2;
+}

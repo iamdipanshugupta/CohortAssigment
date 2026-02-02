@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #131313;
+        color: #fff;
+      }
+      #parent {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "main main side"
+          "footer footer footer";
+      }
+      .nav{
+        grid-area: header;
+      }
+      .blog{
+        grid-area: main;
+      }
+      .ads{
+        grid-area: side;
+      }
+      .footer{
+        grid-area: footer;
+      }
+      div{
+        border: 2px solid palevioletred;
+      }
+    </style>
+  </head>
+  <body id="parent">
+    <div class="nav">NavBar</div>
+    <div class="blog">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ex quis
+      eaque ipsam ea ipsum repellendus unde minima, quam beatae nisi vitae
+      fugiat architecto, cum dolores labore illum impedit? Soluta! Deleniti
+      nihil sit unde animi quae vero magni, quasi esse sint laudantium ipsa
+      repudiandae saepe voluptas inventore nam nostrum repellendus atque,
+      possimus rem quod. Molestiae perferendis praesentium modi facere fugiat?
+      Sed voluptate alias explicabo quasi. Molestias doloribus velit quisquam
+      enim esse autem doloremque optio praesentium. Eaque eius alias, numquam
+      deleniti, reprehenderit voluptatibus quia aperiam officia at minus, beatae
+      quos iusto. Repudiandae tempora laboriosam voluptate id, sunt consequuntur
+      in asperiores et eveniet reiciendis quidem tenetur ullam sapiente iure
+      tempore harum nisi minima, saepe eos assumenda rerum vel. Consequuntur
+      architecto quae earum!
+    </div>
+    <div class="ads">Heeloodcdb</div>
+    <div class="footer">copyright</div>
+  </body>
+</html>
